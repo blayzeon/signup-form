@@ -1,0 +1,137 @@
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$primary-color: hsl(203, 37%, 27%);
+$rem-huge: 8rem;
+$rem-large: 4rem;
+$rem-medium: 2rem;
+$rem-small: 0.5rem;
+$rem-tiny: 0.1rem;
+$trans-white: rgba(223, 223, 223, 0.3);
+$trans-gray: hsla(0, 0%, 50%, 0.30);
+$trans-black: hsla(0, 0%, 0%, 0.3);
+$drop-shadow: drop-shadow(0 0.2rem 0.3rem $trans-gray);
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 100% $font-stack;
+    color: black;
+    background-image: url("https://images.unsplash.com/photo-1652454159675-11ead6275680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+}
+
+h1 {
+    a {
+        all: unset;
+        cursor: pointer;
+        font-size: larger;
+    }
+    
+    font-family: "Oleo Script";
+    src: url(./fonts/Merriweather-BlackItalic.ttf);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: #fff;
+    padding: $rem-medium 0;
+
+    p {
+        width: 75%;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: $rem-small $rem-medium $rem-medium;
+        background-color: #fff;
+        outline: $rem-tiny solid $trans-white;
+        filter: $drop-shadow;
+
+        p {
+            width: 100%;
+        }
+
+        .form-item {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin-top: $rem-small;
+
+            label {
+                font-variant: small-caps;
+                color: rgb(85, 85, 85);
+            }
+            input {
+                width: 65%;
+            }
+        }
+    }
+    
+    button {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        padding: $rem-small $rem-large;
+        border-radius: $rem-small;
+        cursor: pointer;
+        filter: $drop-shadow;
+    }
+
+    a {
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+
+button:hover, a:hover {
+    text-decoration: underline;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: max(350px, 25%);
+    margin-top: 15%;
+    color: white;
+
+    a {
+        color: white;
+    }
+
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: $rem-small;
+        background-color: $trans-black;
+    }
+}
+
+.split-screen {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.octicon {
+    fill: white;
+    width: $rem-large;
+}
+
+.padded {
+    padding: $rem-medium;
+}
+
+.bold {
+    font-weight: bold;
+}

@@ -1,0 +1,117 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font: 100% -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: black;
+  background-image: url("https://images.unsplash.com/photo-1652454159675-11ead6275680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+}
+
+h1 {
+  font-family: "Oleo Script";
+  src: url(./fonts/Merriweather-BlackItalic.ttf);
+}
+h1 a {
+  all: unset;
+  cursor: pointer;
+  font-size: larger;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 2rem 0;
+}
+form p {
+  width: 75%;
+}
+form section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 2rem 2rem;
+  background-color: #fff;
+  outline: 0.1rem solid rgba(223, 223, 223, 0.3);
+  filter: drop-shadow(0 0.2rem 0.3rem hsla(0deg, 0%, 50%, 0.3));
+}
+form section p {
+  width: 100%;
+}
+form section .form-item {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 0.5rem;
+}
+form section .form-item label {
+  font-variant: small-caps;
+  color: rgb(85, 85, 85);
+}
+form section .form-item input {
+  width: 65%;
+}
+form button {
+  background-color: hsl(203deg, 37%, 27%);
+  color: white;
+  border: none;
+  padding: 0.5rem 4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  filter: drop-shadow(0 0.2rem 0.3rem hsla(0deg, 0%, 50%, 0.3));
+}
+form a {
+  color: hsl(203deg, 37%, 27%);
+  text-decoration: none;
+}
+
+button:hover, a:hover {
+  text-decoration: underline;
+}
+
+#logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: max(350px, 25%);
+  margin-top: 15%;
+  color: white;
+}
+#logo-container a {
+  color: white;
+}
+#logo-container div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: hsla(0deg, 0%, 0%, 0.3);
+}
+
+.split-screen {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.octicon {
+  fill: white;
+  width: 4rem;
+}
+
+.padded {
+  padding: 2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=output.css.map */
