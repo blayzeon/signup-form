@@ -19,7 +19,7 @@ function toggleError(set="off"){
 pw1.addEventListener('change', toggleError);
 pw2.addEventListener('change', toggleError);
 
-form.addEventListener('submit', (e) => {
+form.querySelector('button').addEventListener('click', (e) => {
     // ensures that the passwords match
     if (pw1.value !== pw2.value) {
         toggleError("on");
