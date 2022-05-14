@@ -9,6 +9,7 @@ $trans-white: rgba(223, 223, 223, 0.3);
 $trans-gray: hsla(0, 0%, 50%, 0.30);
 $trans-black: hsla(0, 0%, 0%, 0.3);
 $drop-shadow: drop-shadow(0 0.2rem 0.3rem $trans-gray);
+$invalid: $rem-tiny solid red;
 
 html, body {
     width: 100%;
@@ -68,6 +69,7 @@ form {
                 font-variant: small-caps;
                 color: rgb(85, 85, 85);
             }
+
             input {
                 width: 65%;
             }
@@ -87,6 +89,15 @@ form {
     a {
         color: $primary-color;
         text-decoration: none;
+    }
+
+    :invalid {
+        outline: $invalid;
+    }
+
+    .form-error {
+        color: red;
+        visibility: hidden;
     }
 }
 
@@ -114,6 +125,10 @@ button:hover, a:hover {
         gap: $rem-small;
         background-color: $trans-black;
     }
+}
+
+.invalid {
+    outline: $invalid;
 }
 
 .split-screen {

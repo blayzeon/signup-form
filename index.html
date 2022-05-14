@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
     <title>Sass Test</title>
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <main class="split-screen">
@@ -24,10 +25,10 @@
                 <p class="bold">Let's do this!</p>
                 <div class="form-item">
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name">
+                    <input type="text" id="first-name" minlength="1">
                 </div>
                 <div class="form-item">
-                    <label for="last-name">Last Name</label>
+                    <label for="last-name" minlength="1">Last Name</label>
                     <input type="text" id="last-name">
                 </div>
                 <div class="form-item">
@@ -36,15 +37,16 @@
                 </div>
                 <div class="form-item">
                     <label for="phone">Phone Number</label>
-                    <input type="text" id="phone">
+                    <input type="tel" pattern="^\d{10}$" id="phone" oninvalid="setCustomValidity('Please enter a 10-digit phone number.')">
                 </div>
                 <div class="form-item">
                     <label for="password">Password</label>
-                    <input type="password" id="password">
+                    <input type="password" id="password" minlength="8">
+                    <span id="pw-error" class="form-error"><small>*Password fields must match</small></span>
                 </div>
                 <div class="form-item">
                     <label for="confirm">Confirm Password</label>
-                    <input type="password" id="confirm">
+                    <input type="password" id="confirm" minlength="8">
                 </div>
             </section>
             <div class="padded">

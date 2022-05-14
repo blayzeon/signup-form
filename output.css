@@ -69,6 +69,13 @@ form a {
   color: hsl(203deg, 37%, 27%);
   text-decoration: none;
 }
+form :invalid {
+  outline: 0.1rem solid red;
+}
+form .form-error {
+  color: red;
+  visibility: hidden;
+}
 
 button:hover, a:hover {
   text-decoration: underline;
@@ -92,6 +99,10 @@ button:hover, a:hover {
   justify-content: center;
   gap: 0.5rem;
   background-color: hsla(0deg, 0%, 0%, 0.3);
+}
+
+.invalid {
+  outline: 0.1rem solid red;
 }
 
 .split-screen {
