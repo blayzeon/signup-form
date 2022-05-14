@@ -96,7 +96,7 @@ form {
 
     .form-error {
         color: red;
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -149,4 +149,46 @@ button:hover, a:hover {
 
 .bold {
     font-weight: bold;
+}
+
+@media (max-width: 900px){
+    .split-screen {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #logo-container {
+        width: 100%;
+    }
+
+    form p {
+        width: 100%;
+    }
+
+    form > div {
+        text-align: center;
+    }
+
+    section {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px){
+    #logo-container > div {
+        margin-top: 1rem;
+    }
+
+    section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        .form-item {
+            width: 90% !important;
+
+            input {
+                width: 90% !important;
+            }
+        }
+    }
 }

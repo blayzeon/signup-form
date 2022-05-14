@@ -8,11 +8,11 @@ function toggleError(set="off"){
     if (set === "on") {
         pw1.classList.add('invalid');
         pw2.classList.add('invalid');
-        pwError.style.visibility = "visible";    
+        pwError.style.display = "block";    
     } else {
         pw1.classList.remove('invalid');
         pw2.classList.remove('invalid');
-        pwError.style.visibility = "hidden";    
+        pwError.style.display = "none";    
     }
 }
 
